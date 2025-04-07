@@ -1078,8 +1078,8 @@ body {
 }
 .about--options > a {
     position: relative;
-    width: 150px;
-    height: 75px;
+    width: 200px;
+    height: 100px;
     text-decoration: none;
     color: white;
     border: 1px solid gold;
@@ -1088,28 +1088,45 @@ body {
     background-repeat: no-repeat;
 }
 .about--options > a:nth-child(1) {
-    background-image: url("../img/about-winners.jpg");
+    background-image: url("../img/tut.jpg");
 }
 .about--options > a:nth-child(2) {
-    background-image: url("../img/about-philosophy.jpg");
+    background-image: url("../img/udemy.png");
 }
 .about--options > a:nth-child(3) {
-    background-image: url("../img/about-history.jpg");
+    background-image: url("../img/havardx.jpg");
 }
 .about--options > a:nth-child(4) {
     background-image: url("../img/daily-thetha.jpg");
 }
 .about--options > a:hover h3 {
-    bottom: -50px;
+    left: 10px;
 }
 .about--options h3 {
     position: absolute;
     bottom: -38px;
-    left: 10px;
+    left: 5px;
     font-size: 16px;
     text-transform: uppercase;
     -webkit-transition: bottom 0.2s ease-in-out,left 0.2s ease-in-out;
     transition: bottom 0.2s ease-in-out,left 0.2s ease-in-out;
+}
+.about--options h5 {
+    position: absolute;
+    bottom: -58px;
+    left: 5px;
+}
+.about--options p {
+    text-align: center;
+    font-size: .6rem;
+    line-height: normal;
+    position: absolute;
+    width: 100%;
+    left: -2px;
+    bottom: -.6rem;
+    padding: .1rem;
+    color: black;
+    background-color: rgba(255, 217, 0, 0.8);
 }
 @media (max-width: 767px) {
     .about--banner {
@@ -1140,7 +1157,7 @@ body {
     }
     .about--options {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
 }
@@ -1176,6 +1193,10 @@ body {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
+    .about--options a{
+        width: 170px;
+        height: 85px;
+    }
 }
 .contact {
     position: fixed;
@@ -1183,7 +1204,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/contact-visual.png");
+    background-image: url("../img/main-bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1247,23 +1268,20 @@ body {
     margin: 0 auto 25px;
 }
 .contact--lockup .modal--options li:nth-child(1) {
-    background-color: blue;
+    box-shadow: 0 0 .3rem gold;
 }
 .contact--lockup .modal--options li:nth-child(2) {
-    background-color: maroon;
+    box-shadow: 0 0 .3rem gold;
 }
 .contact--lockup .modal--options li:nth-child(3) {
-    background-color: gold;
-    text-transform: uppercase;
+    box-shadow: 0 0 .3rem gold;
 }
 .contact--lockup .modal--options li:nth-child(4) {
-    background-color: gold;
-    text-transform: uppercase;
+    box-shadow: 0 0 .3rem gold;
 }
 .contact--lockup .modal--options li:nth-child(5) {
     margin-bottom: 0;
-    background-color: gold;
-    text-transform: uppercase;
+    box-shadow: 0 0 .3rem gold;
 }
 .contact--lockup .modal--options a {
     display: block;
@@ -1271,7 +1289,14 @@ body {
     padding: 8px 0;
     text-decoration: none;
     color: white;
-    font-weight: 700;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.contact--lockup .modal--options a:hover {
+    color: black;
+    background-color: gold;
+    box-shadow: 0 0 .6rem gold;
 }
 .hire {
     position: relative;
